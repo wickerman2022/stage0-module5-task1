@@ -79,13 +79,13 @@ public class ArrayTasks {
      * arr = ["pineapple", "apple", "pen"] -> ["pen", "apple", "pineapple"]
      */
     public String[] reverseArray(String[] arr) {
-    String[] reversedArray = new String[arr.length];
+        String[] reversedArray = new String[arr.length];
     
-    for (int i = 0; i < arr.length; i++) {
-        reversedArray[i] = arr[arr.length - 1 - i];
-    }
+        for (int i = 0; i < arr.length; i++) {
+            reversedArray[i] = arr[arr.length - 1 - i];
+        }
     
-    return reversedArray;
+        return reversedArray;
     }
 
     /**
@@ -100,26 +100,22 @@ public class ArrayTasks {
      * arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
-    int count = 0;
-    for (int num : arr) {
-        if (num > 0) {
-            count++;
+        int count = 0;
+        for (int num : arr) {
+            if (num > 0) {
+                count++;
+            }
         }
-    }
-    
-    // Create a new array to store the positive numbers
-    int[] positiveNumbers = new int[count];
-    
-    // Populate the new array with positive numbers
-    int index = 0;
-    for (int num : arr) {
-        if (num > 0) {
-            positiveNumbers[index] = num;
-            index++;
+
+        int[] positiveNumbers = new int[count];
+        int index = 0;
+        for (int num : arr) {
+            if (num > 0) {
+                positiveNumbers[index] = num;
+                index++;
+            }
         }
-    }
-    
-    return positiveNumbers;
+        return positiveNumbers;
     }
 
     /**
